@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8AAB95;;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-row {
+    background-color: #457B9D;
+    color: #fff;
+    border: 2px solid #2C5C76; 
+    border-radius: 4px; 
+    padding: 10px 20px;
+}
+
+#calculate {
+    background-color: #A5E6BA;
+    color: #fff;
+    border: 2px solid #7DBF91;
+    border-radius: 4px; 
+    padding: 10px 20px;
+}
+
+#reset {
+    background-color: #E63946;
+    color: #fff;
+    border: 2px solid #A31B25; /* Adding border */
+    border-radius: 4px; /* Optional: Adding rounded corners */
+    padding: 10px 20px;
+}
+
+
+button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for all buttons */
+    transform: scale(1.15);
+}
+
+/* Hover color change for each button */
+#add-row:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+#calculate:hover {
+    background-color: #218838; /* Darker green */
+}
+
+#reset:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+.gpa-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gpa-result label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.container1 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Align items with space between them */
+    align-items: center; /* Align items vertically in the center */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Adjust padding as needed */
+    
+}
+
+
+
+.row1 {
+    background-color:  #73937E ;
+    
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+    }
+    input[type="text"], input[type="number"], select {
+        padding: 4px; /* Reduce padding */
+    }
+    button {
+        padding: 8px; /* Reduce padding */
+        margin: 3px; /* Reduce margin */
+    }
+    .gpa-result input {
+        width: 80px; /* Adjust width */
+        padding: 4px; /* Adjust padding */
+    }
+    /* Note: Adjusts table layout and font sizes for smaller screens */
+}

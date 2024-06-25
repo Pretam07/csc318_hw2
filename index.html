@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <table id="gpa-table">
+            <thead class="row1">
+                <tr>
+                    <th>CheckBox</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                    <th>Credits</th>
+                    <th>Delete Row</th>
+                </tr>
+            </thead>
+            <tbody id="course-rows">
+                <!-- Six predefined rows -->
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #1"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #2"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #3"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #4"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #5"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="course-checkbox"></td>
+                    <td><input type="text" placeholder="Course #6"></td>
+                    <td>
+                        <select>
+                            <option value="">--</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" placeholder="Credits"></td>
+                    <td><button class="remove-row">x</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container1">
+        
+            <button id="add-row">+ Add row</button>
+            <button id="calculate">= Calculate</button>
+            <button id="reset">x Reset</button>
+
+        </div>
+        <div class="gpa-result">
+            <label for="gpa">GPA</label>
+            <input type="text" id="gpa" readonly>
+        </div>
+    </div>
+    <script src="javascript1.js"></script>
+</body>
+</html>
