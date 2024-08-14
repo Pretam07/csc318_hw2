@@ -79,4 +79,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add initial six rows
     resetTable();
+    //new changes made
 });
